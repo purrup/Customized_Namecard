@@ -1,0 +1,52 @@
+h2 {
+  text-transform: uppercase;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+
+}
+
+#input .container {
+  padding-top: 50px;
+}
+
+.border {
+  border: 1px solid darkgrey;
+  margin: 50px auto;
+  padding: 0;
+}
+
+#choose_theme {
+  padding: 10px 0;
+}
+
+.namecard-content {
+  padding: 40px 0;
+}
+
+.left-part {
+  float: left;
+  width: 70%;
+  height: auto;
+}
+
+.right-part {
+  float: right;
+  width: 30%;
+  height: auto;
+  padding-top: 50px;
+}
+
+img {
+  padding-left: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+.dark {
+  background-color: #000;
+  color: #fff;
+}

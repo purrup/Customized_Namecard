@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CustomizedNameCard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <section id="input" class="input-filed">
+    <div class="container">
+      <h2>costumize your namecard</h2>
+      <form>
+        <div class="form-group">
+          <!-- username -->
+          <input type="text" class="form-control" id="username" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <!-- userphoto -->
+          <input type="text" class="form-control" id="userphoto" placeholder="Link to your photo">
+        </div>
+        <!-- selfintro -->
+        <textarea class="form-control" id="inputselfintro" rows="7" placeholder="Introduce yourself in 200 words."></textarea>
+      </form>
+      <!-- theme radio -->
+      <div id="choose_theme" class="form-row">
+        <div class="col-auto">
+          <h5>Choose the theme:</h5>
+        </div>
+        <div class="col">
+          <!-- lighttheme radio -->
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="theme" id="lighttheme">
+            <label class="form-check-label" for="lighttheme">Light theme</label>
+          </div>
+          <!-- darktheme radio -->
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="theme" id="darktheme">
+            <label class="form-check-label" for="darktheme">Dark theme</label>
+          </div>
+        </div>
+      </div>
+      <!-- submit -->
+      <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </section>
+
+  <section id="output" class="output-filed">
+    <!-- output starts here -->
+    <div class="container">
+      <div class="namecard-content clearfix">
+        <div class="col">
+          <div class="left-part">
+            <h2 id="cardName" class="text-justify">
+              <!-- username -->
+            </h2>
+            <p id="selfintro" class="text-justify">
+              <!-- selfintrodarkdㄎ content -->
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="right-part">
+            <!-- userphoto -->
+            <img id="outputuserphoto" src="" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- output ends here -->
+  </section>
+  <script src="main.js"></script>
+</body>
+
+
+</html>
